@@ -25,6 +25,9 @@ img {
     width: 100%;
 }
 
+
+    
+
 .about-us__content--left {
     background-color: var(--background-color);
     margin:auto;
@@ -82,3 +85,18 @@ img {
         display: flex;
     }
 }
+
+.statistic {
+    padding: 0 5px;
+    background-color: var(--background-color);
+}
+
+.statistic__number {
+    color:var(--color-primary);
+    font-weight: 600;
+    display: grid;
+    gap: 10px;
+    border: 1px solid var(--color-primary);
+    padding: 5px;
+}
+
