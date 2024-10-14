@@ -28,7 +28,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     background-color: var(--background-color);
     padding: 40px 0;
 }
@@ -49,10 +49,10 @@ img {
 
 .about-us__subtitle {
     color: var(--color-primary);
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 62px;
+    line-height: 74px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about-us__description {
@@ -78,24 +78,32 @@ img {
 .statistic {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 20px 0;
     background-color: var(--background-color);
-    border-top: 1px solid rgba(225, 225, 225, 0.2); 
-    border-bottom: 1px solid rgba(225, 225, 225, 0.2); 
 }
 
 .statistic__item {
-    text-align: center;
+    text-align: left;
     flex: 1;
     margin: 10px;
+    border: 1px solid var(--color-secondary-2);
+    padding: 20px;
+    width: 200px;
+
+}
+
+.statistic__number, .statistic__sign {
+    display: inline-flex;
+    align-items: center;
 }
 
 .statistic__number {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 62px;
+    font-weight: 600;
     color: var(--color-primary);
     margin-bottom: 10px;
+    line-height: 74px;
 }
 
 .statistic__description {
@@ -104,10 +112,18 @@ img {
     color: var(--color-secondary-2);
 }
 
+.statistic__sign {
+    color: var(--color-secondary-1);
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 74px;
+    margin-left: 5px;
+}
+
 @media (max-width: 600px) {
     .about-us {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .about-us__content--left, 
